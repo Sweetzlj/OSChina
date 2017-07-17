@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.route.test.oschinademo.zonghe.ZiXunDetailActivity">
+
+    <LinearLayout
+        android:id="@+id/Top_Group"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#42f185">
+        <ImageView
+            android:id="@+id/Back"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/btn_back_pressed"
+            />
+        <TextView
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="咨询详情"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:id="@+id/Title_Text"
+            />
+        <FrameLayout
+            android:layout_marginTop="6dp"
+            android:layout_marginLeft="170dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_marginRight="10dp"
+                android:gravity="center"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/fra_news_commed"
+                android:src="@drawable/ic_comment_30" />
+           <!-- <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/WenDaText"
+                android:text="12"
+                android:layout_gravity="center"
+                android:textColor="#ffffff"
+                />-->
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <WebView
+        android:id="@+id/webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></WebView>
+
+</LinearLayout>
